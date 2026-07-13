@@ -4,17 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Data TLV, data conference, AI, analytics, data engineering, summit Israel">
-  <meta name="description" content="Data TLV is Israel's annual non-profit data summit. Join hundreds of data professionals for expert talks, practical tracks, community networking, and real conference energy.">
-  <title>Data TLV Summit | Annual Data Conference in Israel</title>
+  <meta name="description" content="Data TLV is Israel's largest nonprofit community conference for data professionals. Join a full day of practical sessions, real production stories, and meaningful networking.">
+  <title>Data TLV | Israel's Community Data Conference</title>
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Data TLV | Israel's Community Data Conference">
+  <meta property="og:description" content="Where Israel's data community meets for one day of practical learning and connection.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/20240229-0454K80.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon%20folder/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon%20folder/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon%20folder/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon%20folder/favicon.ico">
+  <link rel="manifest" href="favicon%20folder/site.webmanifest">
   <link rel="stylesheet" href="Home.css" media="screen">
-  <meta name="theme-color" content="#0f172a">
-  <meta property="og:title" content="Data TLV Summit | Annual Data Conference in Israel">
-  <meta property="og:description" content="The biggest annual non-profit data summit in Israel.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/20240229-0454K80.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,222 +38,176 @@
       <a class="brand" href="Home.html" aria-label="Data TLV homepage">
         <img src="images/logo-new.png" alt="Data TLV logo" width="224" height="51">
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#stats">Stats</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#schedule">Schedule</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open site menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#top">Home</a>
+        <a href="Sessions-Schedule.html">Agenda</a>
+        <a href="Speakers-Wall.html">Speakers</a>
+        <a href="#team">Team</a>
         <a href="#sponsors">Sponsors</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn-primary" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Book your ticket</a>
+
+      <a class="btn btn-primary nav-ticket" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Tickets</a>
     </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <a href="#top">Home</a>
+      <a href="Sessions-Schedule.html">Agenda</a>
+      <a href="Speakers-Wall.html">Speakers</a>
+      <a href="#team">Team</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Tickets</a>
+    </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero section" aria-labelledby="hero-title">
-      <div class="hero-background" role="img" aria-label="Data TLV audience and stage at previous summit"></div>
+    <section class="hero section reveal" aria-labelledby="hero-title">
+      <div class="hero-background" role="img" aria-label="Data TLV audience at a previous conference"></div>
       <div class="container hero-content">
-        <p class="eyebrow">Annual technology conference</p>
-        <h1 id="hero-title">The Biggest Israel Annual Non-Profit Data Summit</h1>
-        <p class="hero-lead">Calling all Data Wizards, Python Ninjas, and Spreadsheet Sorcerers. Join Data Engineers, DBAs, Data Analysts, and Data Scientists for a full day of AI, modern data tech, and serious community energy.</p>
+        <p class="eyebrow">Community first</p>
+        <h1 id="hero-title">Where Israel's data community meets.</h1>
+        <p class="hero-lead">One day. Thousands of conversations. Spend a day learning from teams building real systems, and meet the people behind the work.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Get ticket</a>
-          <a class="btn btn-ghost" href="photo_gallery.html">View event moments</a>
-        </div>
-        <div class="hero-shortcuts" aria-label="Quick links">
-          <a class="shortcut-card" href="Sessions-Schedule.html">
-            <h2>Our Agenda</h2>
-            <p>See summit timelines and full schedule.</p>
-          </a>
-          <a class="shortcut-card" href="Speakers-Wall.html">
-            <h2>Our Speakers</h2>
-            <p>Explore speaker wall and session lineup.</p>
-          </a>
-          <a class="shortcut-card" href="sponsorship_opportunities.html">
-            <h2>Sponsorship Opportunities</h2>
-            <p>Showcase your brand to top data talent.</p>
-          </a>
-          <a class="shortcut-card" href="#sponsors">
-            <h2>Our Sponsors</h2>
-            <p>Meet the companies backing the summit.</p>
-          </a>
+          <a class="btn btn-primary" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+          <a class="btn btn-ghost" href="Sessions-Schedule.html">View Agenda</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="stats" aria-labelledby="stats-title">
+    <section class="section reveal" id="highlights" aria-labelledby="highlights-title">
       <div class="container">
-        <p class="eyebrow">Conference statistics</p>
-        <h2 id="stats-title">Summit audience at a glance</h2>
+        <p class="eyebrow">Conference Highlights</p>
+        <h2 id="highlights-title">A community built around real data work</h2>
         <div class="stats-grid">
           <article class="stat-card">
-            <p class="stat-value">1000+</p>
-            <p class="stat-label">Attendees</p>
+            <p class="stat-value"><span class="count-up" data-target="1000" data-suffix="+">0</span></p>
+            <p class="stat-label">Data professionals</p>
           </article>
           <article class="stat-card">
-            <p class="stat-value">200+</p>
-            <p class="stat-label">Israel companies</p>
+            <p class="stat-value"><span class="count-up" data-target="200" data-suffix="+">0</span></p>
+            <p class="stat-label">Companies represented</p>
           </article>
           <article class="stat-card">
-            <p class="stat-value">40%</p>
-            <p class="stat-label">New attendees</p>
+            <p class="stat-value"><span class="count-up" data-target="40" data-suffix="%">0</span></p>
+            <p class="stat-label">First-time attendees</p>
           </article>
           <article class="stat-card">
-            <p class="stat-value">35%</p>
+            <p class="stat-value"><span class="count-up" data-target="35" data-suffix="%">0</span></p>
             <p class="stat-label">Decision makers</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="why-attend" aria-labelledby="why-attend-title">
+    <section class="section reveal" id="why-attend" aria-labelledby="why-attend-title">
       <div class="container">
-        <p class="eyebrow">Why attend</p>
-        <h2 id="why-attend-title">A day designed for real data practitioners</h2>
+        <p class="eyebrow">Why Attend</p>
+        <h2 id="why-attend-title">Practical value for data practitioners</h2>
         <div class="card-grid three-up">
           <article class="content-card">
-            <h3>Learn what is changing now</h3>
-            <p>The data field keeps changing. Sessions are built to keep you current with modern tooling, AI capabilities, and practical engineering patterns.</p>
+            <h3>Hear real production stories</h3>
+            <p>Learn from teams sharing what worked, what failed, and what changed their systems.</p>
           </article>
           <article class="content-card">
             <h3>Meet the people behind the work</h3>
-            <p>Connect with data teams across Israel, from analysts to architects, and build partnerships that continue beyond the conference day.</p>
+            <p>Connect with data engineers, analysts, scientists, and leaders from across Israel.</p>
           </article>
           <article class="content-card">
-            <h3>Experience a high-energy summit</h3>
-            <p>Five cinema halls, multiple tracks, and talks that range from deep technical lessons to strategic direction for leadership and product teams.</p>
+            <h3>Discover tools you'll use next week</h3>
+            <p>Walk away with practical patterns and platform ideas you can apply immediately.</p>
+          </article>
+          <article class="content-card">
+            <h3>Build your professional network</h3>
+            <p>Create relationships with peers, hiring teams, founders, and community leaders.</p>
+          </article>
+          <article class="content-card">
+            <h3>Leave with practical ideas</h3>
+            <p>Every track is designed to be useful, concrete, and relevant to real day-to-day work.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="speakers" aria-labelledby="speakers-title">
+    <section class="section reveal" id="topics" aria-labelledby="topics-title">
       <div class="container">
-        <p class="eyebrow">Featured speakers</p>
-        <h2 id="speakers-title">Knowledge that sparks transformation</h2>
-        <p class="section-intro">Your knowledge can spark transformation, so do not keep it to yourself. Bring your story to Data TLV and empower hundreds of data innovators to think bigger.</p>
-        <a class="btn btn-ghost" href="Speakers-Wall.html">Open speakers wall</a>
+        <p class="eyebrow">Conference Topics</p>
+        <h2 id="topics-title">Topics you'll explore</h2>
+        <div class="card-grid three-up">
+          <article class="track-card"><h3>Data Engineering</h3><p>Reliable pipelines, quality, governance, and scale.</p></article>
+          <article class="track-card"><h3>Analytics</h3><p>Modeling, insights, and business impact.</p></article>
+          <article class="track-card"><h3>AI and ML</h3><p>Applied AI in real-world production environments.</p></article>
+          <article class="track-card"><h3>Modern Data Platforms</h3><p>Cloud foundations and platform architecture.</p></article>
+          <article class="track-card"><h3>Architecture</h3><p>System design choices for resilient data products.</p></article>
+          <article class="track-card"><h3>Leadership</h3><p>Team, process, and strategy for data organizations.</p></article>
+          <article class="track-card"><h3>Hands-on Case Studies</h3><p>Lessons from implementation, migration, and operations.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section reveal" id="agenda-preview" aria-labelledby="agenda-preview-title">
+      <div class="container">
+        <p class="eyebrow">Agenda Preview</p>
+        <h2 id="agenda-preview-title">A full day of learning and connection</h2>
+        <div class="agenda-preview">
+          <article class="timeline-item"><p class="timeline-date">09:00</p><h3>Registration</h3></article>
+          <article class="timeline-item"><p class="timeline-date">09:45</p><h3>Opening keynote</h3></article>
+          <article class="timeline-item"><p class="timeline-date">10:30</p><h3>Parallel tracks</h3></article>
+          <article class="timeline-item"><p class="timeline-date">11:45</p><h3>Coffee break</h3></article>
+          <article class="timeline-item"><p class="timeline-date">13:00</p><h3>Lunch</h3></article>
+          <article class="timeline-item"><p class="timeline-date">14:00</p><h3>Networking and sessions</h3></article>
+          <article class="timeline-item"><p class="timeline-date">17:00</p><h3>Closing session</h3></article>
+        </div>
+        <div class="schedule-actions">
+          <a class="btn btn-ghost" href="Sessions-Schedule.html">Open full agenda</a>
+          <a class="btn btn-ghost" href="https://data-tlv-2026.sessionize.com" target="_blank" rel="noopener noreferrer">Open mobile-friendly agenda</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <p class="eyebrow">Meet the Team</p>
+        <h2 id="team-title">The organizers behind Data TLV</h2>
         <div class="card-grid four-up team-grid" aria-label="Organizing team">
           <article class="person-card">
             <img src="images/itay.jpeg" alt="Itai Binyamin" width="320" height="320">
             <h3>Itai Binyamin</h3>
-            <p>Data TLV Founder, Sr. Sales Specialist - Database at Amazon Web Service</p>
+            <p>Founder. Senior Sales Specialist - Database at AWS. Drives partnerships and conference strategy.</p>
             <a href="mailto:itai@datatlv.com?subject=Data%20TLV%20site%20reference">itai@datatlv.com</a>
           </article>
           <article class="person-card">
             <img src="images/me.jpeg" alt="Maria Zakourdaev" width="320" height="320">
             <h3>Maria Zakourdaev</h3>
-            <p>Data TLV Founder, Data Architect at Lsports, Microsoft Data Platform MVP</p>
+            <p>Founder. Data Architect at Lsports and Microsoft Data Platform MVP. Leads content quality and community growth.</p>
             <a href="mailto:maria@datatlv.com?subject=Data%20TLV%20reference">maria@datatlv.com</a>
           </article>
           <article class="person-card">
             <img src="images/shany.png" alt="Shani Sorokin" width="320" height="320">
             <h3>Shani Sorokin</h3>
-            <p>Data Architect and DBA</p>
+            <p>Data Architect and DBA. Supports speaker operations and program delivery.</p>
             <a href="mailto:nienor@gmail.com?subject=Data%20TLV%20Reference">nienor@gmail.com</a>
           </article>
           <article class="person-card">
             <img src="images/a9ba1a16-ae34-4336-96cc-231fb056e3b7.jpg" alt="Yuval Berkovitch" width="320" height="320">
             <h3>Yuval Berkovitch</h3>
-            <p>Entrepreneur, Producer, Data Enthusiast</p>
+            <p>Entrepreneur and producer. Shapes attendee experience and event production.</p>
             <a href="mailto:buzz@datatlv.com?subject=Data%20TLV%20General%20Inquiry">buzz@datatlv.com</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="tracks" aria-labelledby="tracks-title">
+    <section class="section reveal" id="community" aria-labelledby="community-title">
       <div class="container">
-        <p class="eyebrow">Conference tracks</p>
-        <h2 id="tracks-title">Built for every type of data role</h2>
-        <div class="card-grid three-up">
-          <article class="track-card">
-            <h3>Data Engineering</h3>
-            <p>Modern pipelines, reliability, governance, and scale.</p>
-          </article>
-          <article class="track-card">
-            <h3>Analytics and BI</h3>
-            <p>Decision-ready dashboards, modeling, and business impact.</p>
-          </article>
-          <article class="track-card">
-            <h3>AI and ML</h3>
-            <p>Practical AI adoption, model operations, and real outcomes.</p>
-          </article>
-          <article class="track-card">
-            <h3>Architecture and Platforms</h3>
-            <p>Cloud data foundations and resilient system design.</p>
-          </article>
-          <article class="track-card">
-            <h3>Leadership and Community</h3>
-            <p>How teams, culture, and strategy accelerate delivery.</p>
-          </article>
-          <article class="track-card">
-            <h3>Hands-on Practitioner Stories</h3>
-            <p>Lessons learned from production systems and deployments.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="schedule" aria-labelledby="schedule-title">
-      <div class="container">
-        <p class="eyebrow">Schedule preview</p>
-        <h2 id="schedule-title">Summit timelines</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <p class="timeline-date">November 1st, 2025</p>
-            <h3>Call for Speakers opens</h3>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">February 1st, 2026</p>
-            <h3>Call for Speakers closes</h3>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">March 1st, 2026</p>
-            <h3>Speakers notified</h3>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">April 1st, 2026</p>
-            <h3>Agenda published</h3>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">TBD</p>
-            <h3>Exclusive speakers and volunteers dinner</h3>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">Nov 26th, 2026</p>
-            <h3>Data TLV Summit day</h3>
-          </article>
-        </div>
-        <div class="schedule-actions">
-          <a class="btn btn-ghost" href="Sessions-Schedule.html">Open full schedule page</a>
-          <a class="btn btn-ghost" href="https://data-tlv-2026.sessionize.com" target="_blank" rel="noopener noreferrer">Open mobile-friendly agenda</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sponsors" aria-labelledby="sponsors-title">
-      <div class="container">
-        <p class="eyebrow">Sponsors</p>
-        <h2 id="sponsors-title">Backed by leading data companies</h2>
-        <div class="logo-grid sponsors-grid">
-          <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"><img src="images/aws1.jpeg" alt="AWS"></a>
-          <a href="https://www.experda.com/" target="_blank" rel="noopener noreferrer"><img src="images/experda_logo.jpeg" alt="Experda"></a>
-          <a href="https://clickhouse.com/" target="_blank" rel="noopener noreferrer"><img src="images/clickhouse.jpeg" alt="ClickHouse"></a>
-          <a href="https://bigdataboutique.com/" target="_blank" rel="noopener noreferrer"><img src="images/data_butique.jpeg" alt="Big Data Boutique"></a>
-          <a href="https://yukidata.com/" target="_blank" rel="noopener noreferrer"><img src="images/yuki_logo.png" alt="YukiData"></a>
-          <a href="https://www.confluent.io/" target="_blank" rel="noopener noreferrer"><img src="images/confluent.png" alt="Confluent"></a>
-          <a href="https://aerospike.com/" target="_blank" rel="noopener noreferrer"><img src="images/Aerospike_Logo.png" alt="Aerospike"></a>
-        </div>
-        <p class="section-note"><a href="sponsorship_opportunities.html">Explore sponsorship opportunities</a></p>
-      </div>
-    </section>
-
-    <section class="section" id="partners" aria-labelledby="partners-title">
-      <div class="container">
-        <p class="eyebrow">Community partners</p>
-        <h2 id="partners-title">Proudly collaborating with data communities</h2>
+        <p class="eyebrow">Community</p>
+        <h2 id="community-title">Built together with Israel's data communities</h2>
+        <p class="section-intro">Data TLV is a collaboration across communities, meetups, education groups, and practitioners who volunteer to keep this ecosystem growing.</p>
         <div class="logo-grid partners-grid">
           <a href="https://linktr.ee/data_operations_il" target="_blank" rel="noopener noreferrer"><img src="images/data_ops_logo.png" alt="Data Operations IL"></a>
           <a href="http://techxcel.co/" target="_blank" rel="noopener noreferrer"><img src="images/TechXcellogo.png" alt="TechXcel"></a>
@@ -263,37 +222,60 @@
       </div>
     </section>
 
-    <section class="section" id="venue" aria-labelledby="venue-title">
-      <div class="container venue-layout">
-        <div>
-          <p class="eyebrow">Venue</p>
-          <h2 id="venue-title">Cinema City, Rishon Le Tsion, Israel</h2>
-          <p class="venue-detail"><strong>When:</strong> November 26th, 2026</p>
-          <p class="venue-detail"><strong>Where:</strong> Cinema City, Rishon Le Tsion, Israel</p>
-          <p class="venue-detail">Are you ready to take your data expertise to the next level? This is your chance to learn from the brightest minds in data science, analytics, and AI.</p>
+    <section class="section reveal sponsors-low" id="sponsors" aria-labelledby="sponsors-title">
+      <div class="container">
+        <p class="eyebrow">Sponsors</p>
+        <h2 id="sponsors-title">Supported by companies investing in the data community</h2>
+
+        <div class="sponsor-tier">
+          <h3>Platinum</h3>
+          <div class="logo-grid sponsors-grid">
+            <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"><img src="images/aws1.jpeg" alt="AWS"></a>
+          </div>
         </div>
-        <img src="images/20240229-2334K80.jpg" alt="Data TLV venue and attendees" width="900" height="600">
+
+        <div class="sponsor-tier">
+          <h3>Gold</h3>
+          <div class="logo-grid sponsors-grid">
+            <a href="https://www.experda.com/" target="_blank" rel="noopener noreferrer"><img src="images/experda_logo.jpeg" alt="Experda"></a>
+            <a href="https://clickhouse.com/" target="_blank" rel="noopener noreferrer"><img src="images/clickhouse.jpeg" alt="ClickHouse"></a>
+          </div>
+        </div>
+
+        <div class="sponsor-tier">
+          <h3>Community</h3>
+          <div class="logo-grid sponsors-grid">
+            <a href="https://bigdataboutique.com/" target="_blank" rel="noopener noreferrer"><img src="images/data_butique.jpeg" alt="Big Data Boutique"></a>
+            <a href="https://yukidata.com/" target="_blank" rel="noopener noreferrer"><img src="images/yuki_logo.png" alt="YukiData"></a>
+            <a href="https://www.confluent.io/" target="_blank" rel="noopener noreferrer"><img src="images/confluent.png" alt="Confluent"></a>
+            <a href="https://aerospike.com/" target="_blank" rel="noopener noreferrer"><img src="images/Aerospike_Logo.png" alt="Aerospike"></a>
+          </div>
+        </div>
+
+        <p class="section-note"><a href="sponsorship_opportunities.html">Explore sponsorship opportunities</a></p>
       </div>
     </section>
 
-    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+    <section class="section reveal" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
         <p class="eyebrow">Testimonials</p>
-        <h2 id="testimonials-title">Do not take our word for it</h2>
-        <p class="section-intro">Here is what other data people say about our summit.</p>
+        <h2 id="testimonials-title">What attendees say after Data TLV</h2>
         <div class="card-grid three-up">
           <article class="quote-card">
-            <p>"The data field keeps changing, and we have to learn new stuff every day just to keep up. That is why I go to #DataTLV."</p>
+            <img src="images/20240229-0454K80.jpg" alt="Attendee portrait from Data TLV" width="120" height="120">
+            <p>"The data field keeps changing, and we have to learn new stuff every day just to keep up. That is why I go to DataTLV."</p>
             <h3>Chen Hirsh</h3>
             <p class="meta">Data Engineer, Madeira</p>
           </article>
           <article class="quote-card">
-            <p>"Had an incredible experience at the conference. Israeli, large, and solely dedicated to data science, with five cinema halls and multiple tracks."</p>
+            <img src="images/20240229-2334K80.jpg" alt="Attendee portrait from Data TLV" width="120" height="120">
+            <p>"Large and solely dedicated to data. Five cinema halls, multiple tracks, and lots of practical conversations."</p>
             <h3>Maxim Shatzki</h3>
-            <p class="meta">Data Scientist, ML Engineer</p>
+            <p class="meta">Data Scientist and ML Engineer</p>
           </article>
           <article class="quote-card">
-            <p>"The conference was fascinating and full of insights with the best experts and companies in data and artificial intelligence."</p>
+            <img src="images/data_il_innovation_community_logo.jpg" alt="DatA-IL community logo" width="120" height="120">
+            <p>"A fascinating conference with useful insights, strong networking, and a real sense of data community."</p>
             <h3>DatA-IL Innovation Community</h3>
             <p class="meta">Community partner</p>
           </article>
@@ -301,47 +283,76 @@
       </div>
     </section>
 
-    <section class="section" id="faq" aria-labelledby="faq-title">
+    <section class="section reveal" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <p class="eyebrow">FAQ</p>
-        <h2 id="faq-title">Everything attendees ask before the summit</h2>
-        <div class="faq-grid">
-          <details>
-            <summary>Who should attend Data TLV?</summary>
-            <p>Data Engineers, DBAs, Data Analysts, Data Scientists, architects, and data leaders looking to stay sharp and connected.</p>
-          </details>
-          <details>
-            <summary>Where can I review the schedule?</summary>
-            <p>You can preview milestones on this page and access the complete agenda on <a href="Sessions-Schedule.html">the Sessions Schedule page</a>.</p>
-          </details>
-          <details>
-            <summary>How can I become a speaker?</summary>
-            <p>Visit <a href="Speakers-Wall.html">Speakers Wall</a> and follow the Call for Speakers timeline.</p>
-          </details>
-          <details>
-            <summary>Can my company sponsor the summit?</summary>
-            <p>Yes. See package options on <a href="sponsorship_opportunities.html">Sponsorship Opportunities</a>.</p>
-          </details>
-          <details>
-            <summary>Is there a way to volunteer?</summary>
-            <p>Yes, we are looking for volunteers. Contact <a href="mailto:buzz@datatlv.com?subject=Data%20TLV%20Volunteer">buzz@datatlv.com</a>.</p>
-          </details>
-          <details>
-            <summary>Where can I see moments from previous events?</summary>
-            <p>Browse highlights on <a href="photo_gallery.html">Photo Gallery</a>.</p>
-          </details>
+        <h2 id="faq-title">Everything attendees ask before the conference</h2>
+        <div class="faq-grid" role="list">
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">Who should attend Data TLV?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
+              <p>Data Engineers, DBAs, Data Analysts, Data Scientists, architects, and data leaders looking to stay sharp and connected.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">Where can I review the schedule?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
+              <p>Visit <a href="Sessions-Schedule.html">Sessions Schedule</a> for the complete conference agenda.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">How can I become a speaker?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
+              <p>Go to <a href="Speakers-Wall.html">Speakers Wall</a> to follow Call for Speakers updates and submission details.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">Can my company sponsor Data TLV?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
+              <p>Yes. Review sponsorship options on <a href="sponsorship_opportunities.html">Sponsorship Opportunities</a>.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">Is there a volunteer program?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
+              <p>Yes. Contact <a href="mailto:buzz@datatlv.com?subject=Data%20TLV%20Volunteer">buzz@datatlv.com</a> to volunteer.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">Where can I see moments from previous events?</button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6" hidden>
+              <p>Browse previous conference moments in the <a href="photo_gallery.html">Photo Gallery</a>.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section final-cta" aria-labelledby="final-cta-title">
+    <section class="section final-cta reveal" aria-labelledby="final-cta-title">
       <div class="container final-cta-shell">
-        <p class="eyebrow">Final ticket CTA</p>
-        <h2 id="final-cta-title">Join the next Data TLV Summit</h2>
-        <p>Let us turn data dreams into reality. And yes, there will be cocktails and raffles.</p>
+        <p class="eyebrow">Final CTA</p>
+        <h2 id="final-cta-title">See you at DataTLV.</h2>
+        <p>Join Israel's data community for one unforgettable day.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Book your ticket</a>
-          <a class="btn btn-ghost" href="mailto:buzz@datatlv.com?subject=Data%20TLV%20Volunteer">Volunteer with us</a>
+          <a class="btn btn-primary" href="https://tickchak.co.il/95322" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+          <a class="btn btn-ghost" href="mailto:buzz@datatlv.com?subject=Data%20TLV%20Volunteer">Become a Volunteer</a>
         </div>
       </div>
     </section>
@@ -353,7 +364,7 @@
         <a class="brand" href="Home.html" aria-label="Data TLV homepage">
           <img src="images/logo-new.png" alt="Data TLV logo" width="188" height="43">
         </a>
-        <p class="footer-note">Data TLV is a non-profit community summit built by and for the Israeli data ecosystem.</p>
+        <p class="footer-note">Data TLV is a non-profit, volunteer-run conference built by and for the Israeli data ecosystem.</p>
       </div>
       <div class="footer-links" aria-label="Social links">
         <a href="https://www.linkedin.com/company/data-tlv" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -363,5 +374,96 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var menuBtn = document.querySelector('.menu-toggle');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+          var isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+          menuBtn.setAttribute('aria-expanded', String(!isOpen));
+          mobileMenu.hidden = isOpen;
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            menuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenu.hidden = true;
+          });
+        });
+      }
+
+      var revealTargets = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && revealTargets.length) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.16 });
+        revealTargets.forEach(function (target) { revealObserver.observe(target); });
+      } else {
+        revealTargets.forEach(function (target) { target.classList.add('is-visible'); });
+      }
+
+      var counters = document.querySelectorAll('.count-up');
+      var animateCounter = function (el) {
+        var target = parseInt(el.getAttribute('data-target') || '0', 10);
+        var suffix = el.getAttribute('data-suffix') || '';
+        var duration = 1200;
+        var start = performance.now();
+
+        var step = function (now) {
+          var progress = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(target * eased) + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          }
+        };
+        requestAnimationFrame(step);
+      };
+
+      if ('IntersectionObserver' in window && counters.length) {
+        var counterObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && !entry.target.dataset.animated) {
+              entry.target.dataset.animated = 'true';
+              animateCounter(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+
+        counters.forEach(function (counter) { counterObserver.observe(counter); });
+      } else {
+        counters.forEach(animateCounter);
+      }
+
+      var faqTriggers = document.querySelectorAll('.faq-trigger');
+      faqTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          var panelId = trigger.getAttribute('aria-controls');
+          var panel = document.getElementById(panelId);
+          var isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+          faqTriggers.forEach(function (otherTrigger) {
+            var otherPanel = document.getElementById(otherTrigger.getAttribute('aria-controls'));
+            otherTrigger.setAttribute('aria-expanded', 'false');
+            if (otherPanel) {
+              otherPanel.hidden = true;
+            }
+          });
+
+          trigger.setAttribute('aria-expanded', String(!isExpanded));
+          if (panel) {
+            panel.hidden = isExpanded;
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
