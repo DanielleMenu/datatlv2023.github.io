@@ -241,7 +241,16 @@ p {
   inset: 0;
   background:
     linear-gradient(115deg, rgba(6, 15, 32, 0.8) 10%, rgba(9, 37, 84, 0.56) 54%, rgba(9, 108, 95, 0.4) 100%),
-    url("images/20240229-0454K80.jpg") center/cover no-repeat;
+    url("images/hero images/untitled-255.jpg") center/cover no-repeat;
+}
+
+.page-hero {
+  min-height: auto;
+  padding-top: 118px;
+}
+
+.page-hero .hero-content {
+  padding-top: 56px;
 }
 
 .hero-content {
@@ -271,9 +280,7 @@ p {
 
 .stats-grid,
 .card-grid,
-.logo-grid,
-.faq-grid,
-.agenda-preview {
+.logo-grid {
   display: grid;
   gap: 14px;
 }
@@ -326,6 +333,39 @@ p {
   margin-bottom: 22px;
 }
 
+.section-actions {
+  margin-bottom: 22px;
+}
+
+.split-section {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.split-section-tight {
+  margin-bottom: 18px;
+}
+
+.split-section-visual {
+  align-items: center;
+}
+
+.highlight-quote {
+  background: linear-gradient(135deg, #0f2448, #1b5fa4);
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.highlight-quote p {
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.5;
+}
+
 .card-grid {
   margin-top: 16px;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -334,20 +374,72 @@ p {
 .content-card p,
 .track-card p,
 .person-card p,
-.timeline-item p,
 .quote-card p {
   margin-top: 8px;
 }
 
-.agenda-preview {
+.schedule-list {
   margin-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.schedule-row {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-copy h3 {
+  color: #12203b;
+}
+
+.schedule-copy p {
+  margin-top: 6px;
+}
+
+.who-youll-meet {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(223, 239, 255, 0.55) 100%);
+}
+
+.people-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.people-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  color: #1f3557;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-photo {
+  margin: 0;
+}
+
+.feature-photo img {
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .timeline-date {
-  display: inline-block;
-  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
   color: #35588b;
   font-weight: 800;
+  font-family: "Sora", sans-serif;
 }
 
 .schedule-actions {
@@ -415,7 +507,7 @@ p {
 }
 
 .sponsor-tier {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .sponsor-tier h3 {
@@ -455,46 +547,6 @@ p {
 .quote-card .meta {
   font-size: 0.92rem;
   color: #6a7991;
-}
-
-.faq-grid {
-  margin-top: 16px;
-}
-
-.faq-item {
-  padding: 0;
-  overflow: hidden;
-}
-
-.faq-trigger {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  text-align: left;
-  cursor: pointer;
-  padding: 18px 20px;
-  font: inherit;
-  font-weight: 800;
-  color: #16223d;
-  position: relative;
-}
-
-.faq-trigger::after {
-  content: "+";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.faq-trigger[aria-expanded="true"]::after {
-  content: "-";
-}
-
-.faq-panel {
-  padding: 0 20px 18px;
 }
 
 .final-cta {
@@ -565,20 +617,22 @@ button:focus-visible {
 }
 
 @media (min-width: 700px) {
-  .card-grid.three-up {
+  .split-section,
+  .split-section-visual {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .agenda-preview {
+  .schedule-row {
+    grid-template-columns: 108px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .card-grid.three-up {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .logo-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .faq-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer-grid {
@@ -606,16 +660,17 @@ button:focus-visible {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .split-section-tight {
+    grid-template-columns: minmax(0, 1.6fr) auto;
+    align-items: end;
+  }
+
   .card-grid.three-up {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .card-grid.four-up,
   .team-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .agenda-preview {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
