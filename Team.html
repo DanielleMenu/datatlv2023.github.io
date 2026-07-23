@@ -126,6 +126,12 @@
       fill: currentColor;
     }
 
+    .team-page .person-link--disabled {
+      pointer-events: none;
+      opacity: 0.45;
+      background: rgba(0, 87, 231, 0.05);
+    }
+
     @media (max-width: 640px) {
       .team-page .team-grid {
         gap: 36px;
@@ -194,11 +200,14 @@
             <div class="person-photo">
               <img src="images/itay.jpeg" alt="Itai Binyamin" width="200" height="250">
             </div>
-            <h3>Itai Binyamin</h3>
+            <h3>Itai <br>Binyamin</h3>
             <p class="person-title">Sr. Sales Specialist - Database at Amazon Web Service</p>
             <div class="person-links" aria-label="Itai Binyamin links">
               <a class="person-link" href="mailto:itai@datatlv.com" aria-label="Email Itai Binyamin">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4.2V18h16V8.2l-8 5-8-5zM20 6H4l8 5 8-5z"/></svg>
+              </a>
+              <a class="person-link" href="https://www.linkedin.com/in/itaibinyamin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for Itai Binyamin">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 8.9h3.98V21H3V8.9Zm6.54 0h3.82v1.65h.05c.53-.95 1.84-1.95 3.79-1.95 4.06 0 4.81 2.67 4.81 6.15V21h-3.98v-5.42c0-1.29-.02-2.95-1.8-2.95-1.81 0-2.09 1.42-2.09 2.85V21H9.54V8.9Z"/></svg>
               </a>
             </div>
           </article>
@@ -212,6 +221,9 @@
               <a class="person-link" href="mailto:maria@datatlv.com" aria-label="Email Maria Zakourdaev">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4.2V18h16V8.2l-8 5-8-5zM20 6H4l8 5 8-5z"/></svg>
               </a>
+              <a class="person-link" href="https://www.linkedin.com/in/redheaddba/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for Maria Zakourdaev">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 8.9h3.98V21H3V8.9Zm6.54 0h3.82v1.65h.05c.53-.95 1.84-1.95 3.79-1.95 4.06 0 4.81 2.67 4.81 6.15V21h-3.98v-5.42c0-1.29-.02-2.95-1.8-2.95-1.81 0-2.09 1.42-2.09 2.85V21H9.54V8.9Z"/></svg>
+              </a>
             </div>
           </article>
           <article class="person-card">
@@ -220,6 +232,11 @@
             </div>
             <h3>Shani Sorokin</h3>
             <p class="person-title">Data Architect &amp; DBA</p>
+              <div class="person-links" aria-label="Shani Sorokin LinkedIn unavailable">
+                <span class="person-link person-link--disabled" aria-hidden="true" title="LinkedIn profile coming soon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 8.9h3.98V21H3V8.9Zm6.54 0h3.82v1.65h.05c.53-.95 1.84-1.95 3.79-1.95 4.06 0 4.81 2.67 4.81 6.15V21h-3.98v-5.42c0-1.29-.02-2.95-1.8-2.95-1.81 0-2.09 1.42-2.09 2.85V21H9.54V8.9Z"/></svg>
+                </span>
+              </div>
           </article>
           <article class="person-card">
             <div class="person-photo">
@@ -227,6 +244,11 @@
             </div>
             <h3>Yuval Berkovitch</h3>
             <p class="person-title">Entrepreneur, Producer, Data Enthusiast</p>
+              <div class="person-links" aria-label="Yuval Berkovitch links">
+                <a class="person-link" href="https://www.linkedin.com/in/yuval-berkovitch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for Yuval Berkovitch">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 8.9h3.98V21H3V8.9Zm6.54 0h3.82v1.65h.05c.53-.95 1.84-1.95 3.79-1.95 4.06 0 4.81 2.67 4.81 6.15V21h-3.98v-5.42c0-1.29-.02-2.95-1.8-2.95-1.81 0-2.09 1.42-2.09 2.85V21H9.54V8.9Z"/></svg>
+                </a>
+              </div>
           </article>
           <article class="person-card">
             <div class="person-photo">
@@ -234,6 +256,11 @@
             </div>
             <h3>Danielle Menuhin</h3>
             <p class="person-title">Data Operations Freelancer</p>
+              <div class="person-links" aria-label="Danielle Menuhin links">
+                <a class="person-link" href="https://www.linkedin.com/in/danielle-menuhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for Danielle Menuhin">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 8.9h3.98V21H3V8.9Zm6.54 0h3.82v1.65h.05c.53-.95 1.84-1.95 3.79-1.95 4.06 0 4.81 2.67 4.81 6.15V21h-3.98v-5.42c0-1.29-.02-2.95-1.8-2.95-1.81 0-2.09 1.42-2.09 2.85V21H9.54V8.9Z"/></svg>
+                </a>
+              </div>
           </article>
         </div>
       </div>
