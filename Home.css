@@ -152,7 +152,19 @@ p {
 .mobile-socials {
   display: flex;
   justify-content: flex-start;
-  padding: 4px 0 2px;
+  gap: 8px;
+  padding: 2px 0 2px;
+  width: fit-content;
+}
+
+.mobile-socials .social-link {
+  width: 32px;
+  height: 32px;
+}
+
+.mobile-socials .social-link svg {
+  width: 15px;
+  height: 15px;
 }
 
 .social-link {
