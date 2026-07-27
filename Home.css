@@ -158,13 +158,13 @@ p {
 }
 
 .mobile-socials .social-link {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
 }
 
 .mobile-socials .social-link svg {
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
 }
 
 .social-link {
@@ -403,6 +403,10 @@ p {
     margin: 0;
     padding: 0;
     border: 0;
+  }
+
+  .hero-lead {
+    display: none;
   }
 }
 
